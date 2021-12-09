@@ -22,12 +22,6 @@ function App() {
     list: NUMBERS_COUNT_DEFAULT,
   });
 
-  useEffect(() => {
-    (async () => {
-      await list();
-    })()
-  }, []);
-
   /**
    * TODO: Separate functions into hooks and components
    */
@@ -85,6 +79,11 @@ function App() {
       list: NUMBERS_COUNT_DEFAULT,
     });
   }));
+
+  useEffect(() => {
+    (async () => await list())();
+  // eslint-disable-next-line
+  }, []);
 
   return (
     <AppContext.Provider value={{

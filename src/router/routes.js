@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
-import { Switch, Route, Redirect } from "react-router-dom";
-
+import { Switch, Route} from "react-router-dom";
 import NumberCountCardGroup from "../pages/NumberCountCardGroup";
 import NumberCountChart from "../pages/NumberCountChart";
 import {AppContext} from "../contexts";

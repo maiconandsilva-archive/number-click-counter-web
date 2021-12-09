@@ -1,6 +1,5 @@
 import {
   Button,
-  InputGroup,
   Nav,
   Navbar,
   NavbarBrand,
